@@ -1,0 +1,6 @@
+[03-Nov-2019 00:42:45 America/Chicago] PHP Warning:  require(/home/museumac/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/museumac/public_html/artisan on line 18
+[03-Nov-2019 00:42:45 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home/museumac/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/museumac/public_html/artisan on line 18
+[03-Nov-2019 00:42:53 America/Chicago] PHP Warning:  require(/home/museumac/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/museumac/public_html/artisan on line 18
+[03-Nov-2019 00:42:53 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home/museumac/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/museumac/public_html/artisan on line 18
+[03-Nov-2019 00:42:58 America/Chicago] PHP Warning:  require(/home/museumac/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/museumac/public_html/artisan on line 18
+[03-Nov-2019 00:42:58 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home/museumac/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/museumac/public_html/artisan on line 18

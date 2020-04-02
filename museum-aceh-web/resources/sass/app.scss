@@ -1,0 +1,89 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~owl.carousel/dist/assets/owl.carousel.min.css';
+@import '~owl.carousel/dist/assets/owl.theme.default.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+.full-height-img-holder{
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.aceh-stripe{
+    height: 5px;
+    background: linear-gradient(to right, $red 33.33%,$yellow 33.33%, $yellow 66.66%, $green 66.66%, $green 100%);
+}
+
+.aceh-stripe-v{
+    width: 5px;
+    background: linear-gradient(to bottom, $red 33.33%,$yellow 33.33%, $yellow 66.66%, $green 66.66%, $green 100%);
+}
+
+.main-header{
+    padding: 20px 0;
+}
+
+.main-carousel{
+    &__item{
+        height: 350px;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.media{
+    .media-img-holder{
+        
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.main-carousel{
+    .owl-nav{
+        .owl-prev{
+            span{
+                position: absolute;
+                font-size: 30px;
+                left: 15px;
+                top: 50%;
+                z-index: 9999;
+                font-weight: bold;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.65);
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                color: #fff;
+            }
+        }
+
+        .owl-next{
+            span{
+                position: absolute;
+                font-size: 30px;
+                right: 15px;
+                top: 50%;
+                z-index: 9999;
+                font-weight: bold;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.65);
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                color: #fff;
+            }
+        }
+    }
+}
