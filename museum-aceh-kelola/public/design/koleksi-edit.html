@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koleksi Museum Aceh</title>
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="aceh-stripe"></div><header class="bg-dark text-white py-5">
+        <div class="container-fluid">
+
+            <div class="row mb-5 align-items-center">
+                <div class="col-sm-6">
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <img src="./dist/img/app-logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-sm-9">
+                            <h1 class="h3 mb-0">SISTEM INFORMASI PENGELOLAAN <br> MUSEUM ACEH</h1>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./home.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="./koleksi.html">Koleksi</a></li>
+                <li class="nav-item"><a class="nav-link" href="./event-list.html">Event & Pameran</a></li>
+                <li class="nav-item"><a class="nav-link" href="./kunjungan.html">Kunjungan</a></li>
+                <li class="nav-item"><a class="nav-link" href="./website.html">Website</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kepegawaian
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./kepegawaian.html">PNS</a>
+                        <a class="dropdown-item" href="./kepegawaian-non-pns.html">Non PNS</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./arsip.html">Arsip</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pengguna.html">Pengguna</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Koleksi</h3>
+
+                    <div class="card card-body">
+
+                        <h5>Form Input Data Koleksi</h5>
+
+                        <hr>
+
+                        <form>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+
+                                    <div class="form-group row">
+                                        <label for="jenis_koleksi" class="col-sm-3 col-form-label">Jenis Koleksi</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" id="jenis_koleksi" ></select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="nama_koleksi" class="col-sm-3 col-form-label">Nama/Judul Koleksi</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="nama_koleksi">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="no_inventaris" class="col-sm-3 col-form-label">Nomor Inventaris</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="no_inventaris">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="no_inventaris" class="col-sm-3 col-form-label">Tanggal Inventaris</label>
+                                        <div class="col-sm-9">
+                                            <input type="date" class="form-control" id="no_inventaris">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="tanggal_pengadaan" class="col-sm-3 col-form-label">Tanggal Pengadaan</label>
+                                        <div class="col-sm-9">
+                                            <input type="date" class="form-control" id="tanggal_pengadaan">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="kondisi" class="col-sm-3 col-form-label">Kondisi</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" id="kondisi">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="ukuran_berat" class="col-sm-3 col-form-label">Ukuran Berat</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" id="ukuran_berat">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="ukuran_panjang" class="col-sm-3 col-form-label">Ukuran Panjang</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" id="ukuran_panjang">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="ukuran_lebar" class="col-sm-3 col-form-label">Ukuran Lebar</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" id="ukuran_lebar">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="ukuran_tinggi" class="col-sm-3 col-form-label">Ukuran Tinggi</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" id="ukuran_tinggi">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="cara_perolehan" class="col-sm-3 col-form-label">Cara Perolehan</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="cara_perolehan">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="tempat_perolehan" class="col-sm-3 col-form-label">Tempat Perolehan</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="tempat_perolehan">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lokasi_penempatan" class="col-sm-3 col-form-label">Lokasi Penempatan</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="lokasi_penempatan">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="keterangan_penempatan" class="col-sm-3 col-form-label">Keterangan Penempatan</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="keterangan_penempatan">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="nama_pencatatan" class="col-sm-3 col-form-label">Nama Pencatat</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="nama_pencatatan">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="asal_usul" class="col-sm-3 col-form-label">Asal Usul</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="asal_usul">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="kode_aset" class="col-sm-3 col-form-label">Kode Aset</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="kode_aset">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="deskripsi_singkat" class="col-sm-3 col-form-label">Deskripsi Singkat</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" rows="8" id="deskripsi_singkat"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-sm-6">
+                                    
+                                    <div class="form-group row">
+                                        <label for="nama_latin" class="col-sm-3 col-form-label">Nama Latin</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" id="nama_latin" ></select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="kingdom" class="col-sm-3 col-form-label">Kingdom</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="kingdom">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="phylum" class="col-sm-3 col-form-label">Phylum</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="phylum">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="class" class="col-sm-3 col-form-label">Class</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="class">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="order" class="col-sm-3 col-form-label">Order</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="order">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="sub_order" class="col-sm-3 col-form-label">Sub Order</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="Order">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="famili" class="col-sm-3 col-form-label">Famili</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="famili">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="sub_famili" class="col-sm-3 col-form-label">Sub Famili</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="sub_famili">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="genus" class="col-sm-3 col-form-label">Genus</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="genus">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="species" class="col-sm-3 col-form-label">Species</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="species">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="sub_species" class="col-sm-3 col-form-label">Sub Species</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="sub_species">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="habitat" class="col-sm-3 col-form-label">Habitat</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="habitat">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="endemik" class="col-sm-3 col-form-label">Endemik/Non Endemik</label>
+                                        <div class="col-sm-9">
+                                            <input type="checkbox" id="endemik"> Endemik
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="status" class="col-sm-3 col-form-label">Status</label>
+                                        <div class="col-sm-9">
+                                            <input type="checkbox" id="status"> Dilindungi
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="warna" class="col-sm-3 col-form-label">Warna</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="warna">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="teknik_pengawetan" class="col-sm-3 col-form-label">Teknik Pengawetan</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="teknik_pengawetan">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label for="petugas_preparasi" class="col-sm-3 col-form-label">Petugas Preparasi</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="petugas_preparasi">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="gambar_arsip" class="col-sm-3 col-form-label">Gambar Arsip</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="gambar_arsip">
+                                            <button class="btn btn-danger mt-2"><i class="fa fa-plus"></i> Tambah Gambar</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="koleksi_digital" class="col-sm-3 col-form-label">Koleksi Digital</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="koleksi_digital">
+                                            <button class="btn btn-danger mt-2"><i class="fa fa-plus"></i> Tambah Gambar</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row mt-5">
+                                <div class="col-sm-12 text-right">
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-save"></i> Simpan</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+            
+     
+    
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+</body>
+</html>

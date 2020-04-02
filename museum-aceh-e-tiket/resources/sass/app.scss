@@ -1,0 +1,66 @@
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-table/dist/bootstrap-table.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+
+#total_pembayaran{
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}
+
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.aceh-stripe{
+    height: 5px;
+    background: linear-gradient(to right, $red 33.33%,$yellow 33.33%, $yellow 66.66%, $green 66.66%, $green 100%);
+}
+
+.app-logo-auth{
+
+    display: flex !important;
+    justify-content: center !important;
+
+    &__img-wrapper{
+        // flex: 1 !important;
+
+        img{
+            width: 100px !important;
+        }
+    }
+    &__title{
+        margin-left: 16px !important;
+        // flex: 1 !important;
+    }
+}
+
+.app-logo{
+
+    
+
+    display: flex;
+    &__img-wrapper{
+        width: 100px;
+
+        img{
+            width: 100%;
+        }
+    }
+    &__title{
+        margin-left: 16px;
+        flex: 1;
+    }
+}
